@@ -278,7 +278,7 @@ __WAST module__
 (module
   ;; Note the namespace of the WASM module to be tested is "wast_application"
   (import "wast_application" "main" (func $main))
-  (import "wast_snapshot_preview1" "assert" (func $assert (param i32)))
+  (import "wast_snapshot_preview1" "assert_i32_eq" (func $assert_i32_eq (param i32 i32)))
 
   ;; Setup and teardown
   (func (export "wst_before_all")
