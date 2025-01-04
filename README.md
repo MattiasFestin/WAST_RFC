@@ -281,25 +281,25 @@ __WAST module__
   (import "wast_snapshot_preview1" "assert_i32_eq" (func $assert_i32_eq (param i32 i32)))
 
   ;; Setup and teardown
-  (func (export "wst_before_all")
+  (func (export "wast_before_all")
      ;;...
   )
-  (func (export "wst_before_each")
+  (func (export "wast_before_each")
     ;;...
   )
-  (func (export "wst_after_all")
+  (func (export "wast_after_all")
     ;;...
   )
-  (func (export "wst_after_each")
+  (func (export "wast_after_each")
     ;;...
   )
 
   ;; Tests (Each test is run in a separate context to keep them isolated an deterministic for concurrent testing).
-  ;; Note that each test is prefixed with "wst_test_" to indicate that they are test functions.
-  (func (export "wst_test_example1")
+  ;; Note that each test is prefixed with "wast_test_" to indicate that they are test functions.
+  (func (export "wast_test_example1")
     ;; Test logic for example1
   )
-  (func (export "wst_test_example2")
+  (func (export "wast_test_example2")
     ;; Test logic for example2
   )
 
